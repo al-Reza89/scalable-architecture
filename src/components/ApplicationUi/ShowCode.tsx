@@ -1,7 +1,11 @@
-import React from "react";
+import React from 'react';
 
-const ShowCode = () => {
-  return <div>ShowCode</div>;
+export interface IShowCode {
+  text: string;
+}
+
+const ShowCode: React.FC<IShowCode> = ({ text }) => {
+  return <div>{text}</div>;
 };
 
 export default ShowCode;

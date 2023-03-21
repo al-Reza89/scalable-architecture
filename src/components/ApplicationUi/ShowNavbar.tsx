@@ -13,12 +13,14 @@ const initialState = {
 
 export interface IShowNavbar {
   component: any;
+  text: string;
 }
 
-const ShowNavbar: React.FC<IShowNavbar> = ({ component }) => {
+const ShowNavbar: React.FC<IShowNavbar> = ({ component, text }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   // console.log({ component: component.type });
+  console.log({ text: text });
 
   // console.log(state.codeButton);
 
@@ -94,7 +96,7 @@ const ShowNavbar: React.FC<IShowNavbar> = ({ component }) => {
           {state.previewButton ? (
             <ReflexCard component={component} />
           ) : (
-            <ShowCode />
+            <ShowCode text={text} />
           )}
         </div>
       </div>

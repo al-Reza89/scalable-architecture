@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import { SiDiscord, SiRakuten } from "react-icons/si";
-import { BsGithub } from "react-icons/bs";
-import { RiSunLine } from "react-icons/ri";
-import { CiSearch } from "react-icons/ci";
-import SearchInput from "../SearchInput";
+import { useState } from 'react';
+import { BsGithub } from 'react-icons/bs';
+import { CiSearch } from 'react-icons/ci';
+import { RiSunLine } from 'react-icons/ri';
+import { SiDiscord, SiRakuten } from 'react-icons/si';
+import SearchInput from '../../SearchInput';
 
 const Headers1 = () => {
   const [showDiscord, setShowDiscord] = useState(false);
@@ -48,8 +48,8 @@ const Headers1 = () => {
               <span
                 className={`${
                   showDiscord
-                    ? "absolute -left-4 py-1 px-2 bg-black mt-2 rounded-sm text-sm "
-                    : "hidden"
+                    ? 'absolute -left-4 py-1 px-2 bg-black mt-2 rounded-sm text-sm '
+                    : 'hidden'
                 }`}
               >
                 Discord
@@ -66,8 +66,8 @@ const Headers1 = () => {
               <span
                 className={`${
                   showGithub
-                    ? "absolute -left-4 py-1 px-2 bg-black mt-2 rounded-sm text-sm "
-                    : "hidden"
+                    ? 'absolute -left-4 py-1 px-2 bg-black mt-2 rounded-sm text-sm '
+                    : 'hidden'
                 }`}
               >
                 Github
@@ -84,8 +84,8 @@ const Headers1 = () => {
               <span
                 className={`${
                   showDark
-                    ? "absolute -left-2 py-1 px-2 bg-black mt-2 rounded-sm text-sm w-fit "
-                    : "hidden"
+                    ? 'absolute -left-2 py-1 px-2 bg-black mt-2 rounded-sm text-sm w-fit '
+                    : 'hidden'
                 }`}
               >
                 Light

@@ -1,11 +1,12 @@
 import { AiOutlineArrowLeft } from 'react-icons/ai';
-import Headers1 from '../AllHeaders/Headers1';
+import { text1 } from '../AllHeaders/Header1/Header1Text';
+import Headers1 from '../AllHeaders/Header1/Headers1';
 import ShowNavbar from './ShowNavbar';
 
 const componentsObjects = {
-  components1: <Headers1 />,
-  compnents2: <Headers1 />,
-  compnents3: <Headers1 />,
+  components1: { component: <Headers1 />, text: text1 },
+  compnents2: { component: <Headers1 />, text: text1 },
+  compnents3: { component: <Headers1 />, text: text1 },
 };
 
 const AllNavbars = () => {
@@ -20,9 +21,11 @@ const AllNavbars = () => {
           Navbars
         </span>
         <div>
-          {Object.entries(componentsObjects).map(([key, value]) => (
-            <ShowNavbar key={key} component={value} />
-          ))}
+          {Object.entries(componentsObjects).map(
+            ([key, { component, text }]) => (
+              <ShowNavbar key={key} component={component} text={text} />
+            )
+          )}
         </div>
       </div>
     </div>
