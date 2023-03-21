@@ -7,12 +7,16 @@ const componentsObjects = {
   components1: { component: <Headers1 />, text: text1 },
   compnents2: { component: <Headers1 />, text: text1 },
   compnents3: { component: <Headers1 />, text: text1 },
+  compnents4: { component: <Headers1 />, text: text1 },
+  compnents5: { component: <Headers1 />, text: text1 },
+  compnents6: { component: <Headers1 />, text: text1 },
+  compnents7: { component: <Headers1 />, text: text1 },
 };
 
 const AllNavbars = () => {
   return (
     <div>
-      <div>
+      <div className="">
         <div className="flex gap-1 text-blue-300 items-center cursor-pointer mb-5 ">
           <AiOutlineArrowLeft className="h-2 w-2" />
           <span className="font-thin text-sm">Back to all categories</span>

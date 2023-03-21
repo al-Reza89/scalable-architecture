@@ -1,5 +1,4 @@
 export const text1: string = `
-
 import { useState } from 'react';
 import { BsGithub } from 'react-icons/bs';
 import { CiSearch } from 'react-icons/ci';
@@ -107,7 +106,4 @@ const Headers1 = () => {
 };
 
 export default Headers1;
-
-
-
 `;
