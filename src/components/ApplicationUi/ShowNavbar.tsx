@@ -1,15 +1,11 @@
-import reducer from '@/hooks/ButtonHooks';
+import reducer, { initialState } from '@/hooks/ButtonHooks';
 import { useReducer } from 'react';
 import { AiFillGithub, AiOutlineEye } from 'react-icons/ai';
 import { BsBoxArrowUpRight, BsCodeSlash } from 'react-icons/bs';
 import { TbComponents } from 'react-icons/tb';
 import ReflexCard from './ReflexCard';
 import ShowCode from './ShowCode';
-
-const initialState = {
-  previewButton: true,
-  codeButton: false,
-};
+// import ReflexCard from './ReflexCard';
 
 export interface IShowNavbar {
   component: any;
@@ -36,8 +32,10 @@ const ShowNavbar: React.FC<IShowNavbar> = ({
 
     if (buttonName === 'previewButton' && !state.previewButton) {
       dispatch({ type: 'ACTIVE_PREVIEW' });
+      console.log(state.previewButton);
     } else if (buttonName === 'codeButton' && !state.codeButton) {
       dispatch({ type: 'ACTIVE_CODE' });
+      console.log(state.codeButton);
     }
   };
 
@@ -66,7 +64,7 @@ const ShowNavbar: React.FC<IShowNavbar> = ({
                   color="white"
                 />
               </div>
-              <span className="text-xs">Build by @</span>
+              <span className="text-xs">Build by @reza</span>
             </div>
           </div>
           <div className="flex py-1 px-1  bg-black  justify-center rounded-md ">
