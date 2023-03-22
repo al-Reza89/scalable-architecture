@@ -1,6 +1,8 @@
 import reducer from '@/hooks/ButtonHooks';
 import React, { useReducer, useState } from 'react';
+import { FaCss3Alt, FaReact } from 'react-icons/fa';
 import { HiOutlineCheck, HiOutlineClipboard } from 'react-icons/hi';
+import { SiTailwindcss } from 'react-icons/si';
 
 export interface IShowCode {
   code: string;
@@ -59,19 +61,35 @@ const ShowCode: React.FC<IShowCode> = ({ code, RawCode, RawCss }) => {
         {state.rawCssButton && RawCss}
         {state.rawCodeButton && RawCode}
       </pre>
-      <div className="flex flex-col mt-4   ">
+      <div className="flex flex-col my-4 gap-3 text-xl  ">
         <div onClick={handleCopyClick} className="cursor-pointer">
           {isCopied ? (
-            <HiOutlineCheck />
+            <HiOutlineCheck className="" color="blue" />
           ) : (
             <div>
               <HiOutlineClipboard />
             </div>
           )}
         </div>
-        <div onClick={() => handleButton('rawCodeButton')}>rawCode</div>
-        <div onClick={() => handleButton('rawCssButton')}>rawCss</div>
-        <div onClick={() => handleButton('tailwindButton')}>tailwind code</div>
+        <div onClick={() => handleButton('rawCodeButton')}>
+          <FaReact
+            className={`cursor-pointer ${
+              state.rawCodeButton && 'fill-blue-700'
+            } `}
+          />
+        </div>
+        <div onClick={() => handleButton('rawCssButton')}>
+          <FaCss3Alt
+            className={`cursor-pointer ${
+              state.rawCssButton && 'fill-blue-700'
+            } `}
+          />
+        </div>
+        <div onClick={() => handleButton('tailwindButton')}>
+          <SiTailwindcss
+            className={`cursor-pointer ${state.codeButton && 'fill-blue-700'} `}
+          />
+        </div>
       </div>
     </div>
   );
