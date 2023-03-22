@@ -1,16 +1,23 @@
 import { AiOutlineArrowLeft } from 'react-icons/ai';
-import { text1 } from '../AllHeaders/Header1/Header1Text';
+import { Code, RawCode, RawCss } from '../AllHeaders/Header1/Header1Text';
 import Headers1 from '../AllHeaders/Header1/Headers1';
+import Header2 from '../AllHeaders/Header2/Header2';
+import { Code2, RawCode2, RawCss2 } from '../AllHeaders/Header2/Header2Text';
 import ShowNavbar from './ShowNavbar';
 
 const componentsObjects = {
-  components1: { component: <Headers1 />, text: text1 },
-  compnents2: { component: <Headers1 />, text: text1 },
-  compnents3: { component: <Headers1 />, text: text1 },
-  compnents4: { component: <Headers1 />, text: text1 },
-  compnents5: { component: <Headers1 />, text: text1 },
-  compnents6: { component: <Headers1 />, text: text1 },
-  compnents7: { component: <Headers1 />, text: text1 },
+  components1: {
+    component: <Headers1 />,
+    code: Code,
+    RawCode: RawCode,
+    RawCss: RawCss,
+  },
+  components2: {
+    component: <Header2 />,
+    code: Code2,
+    RawCode: RawCode2,
+    RawCss: RawCss2,
+  },
 };
 
 const AllNavbars = () => {
@@ -26,8 +33,14 @@ const AllNavbars = () => {
         </span>
         <div>
           {Object.entries(componentsObjects).map(
-            ([key, { component, text }]) => (
-              <ShowNavbar key={key} component={component} text={text} />
+            ([key, { component, code, RawCode, RawCss }]) => (
+              <ShowNavbar
+                key={key}
+                component={component}
+                code={code}
+                RawCode={RawCode}
+                RawCss={RawCss}
+              />
             )
           )}
         </div>

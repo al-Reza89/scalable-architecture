@@ -1,4 +1,4 @@
-export const text1: string = `
+export const Code: string = `
 import { useState } from 'react';
 import { BsGithub } from 'react-icons/bs';
 import { CiSearch } from 'react-icons/ci';
@@ -106,4 +106,24 @@ const Headers1 = () => {
 };
 
 export default Headers1;
+`;
+
+export const RawCode: string = `
+import React from 'react';
+import styles from './Header1Raw.module.css';
+
+export interface IHeader1Raw {}
+
+const Header1Raw: React.FC<IHeader1Raw> = () => {
+  return <div className={styles.container}>Header1Raw</div>;
+};
+
+export default Header1Raw;
+`;
+
+export const RawCss: string = `
+.container {
+  display: flex;
+  justify-content: center;
+}
 `;

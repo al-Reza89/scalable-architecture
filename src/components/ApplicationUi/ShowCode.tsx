@@ -3,14 +3,19 @@ import React, { useState } from 'react';
 // import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 export interface IShowCode {
-  text: string;
+  code: string;
+  RawCode: string;
+  RawCss: string;
 }
 
-const ShowCode: React.FC<IShowCode> = ({ text }) => {
+const ShowCode: React.FC<IShowCode> = ({ code, RawCode, RawCss }) => {
   const [isCopied, setIsCopied] = useState(false);
 
+  console.log(RawCode);
+  console.log(RawCss);
+
   const handleCopyClick = () => {
-    navigator.clipboard.writeText(text);
+    navigator.clipboard.writeText(code);
     setIsCopied(true);
 
     setTimeout(() => {
@@ -27,13 +32,13 @@ const ShowCode: React.FC<IShowCode> = ({ text }) => {
       </div>
       {/* 
       <SyntaxHighlighter language="javascript" style={dark}>
-        {text}
+        {code}
       </SyntaxHighlighter> */}
       <pre
         style={{ whiteSpace: 'pre-wrap' }}
         className="text-sm text-gray-300 "
       >
-        {text}
+        {code}
       </pre>
     </div>
   );
