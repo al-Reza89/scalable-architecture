@@ -27,7 +27,7 @@ const AllNavbars = () => {
       <div className="">
         <div className="flex gap-1 text-blue-300 items-center cursor-pointer mb-5 ">
           <AiOutlineArrowLeft className="h-2 w-2" />
-          <Link href={'/category'}>
+          <Link href={'/categories'}>
             <span className="font-thin text-sm">Back to all categories</span>
           </Link>
         </div>
