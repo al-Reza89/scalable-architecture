@@ -15,7 +15,7 @@ const Headers1 = () => {
   return (
     <div className="  ">
       <div className=" w-full h-14 bg-[rgb(29,29,31)]  z-10 sticky    ">
-        <div className=" flex justify-between h-full items-center  max-w-6xl mx-auto  ">
+        <div className=" flex justify-between h-full items-center  max-w-7xl mx-auto  ">
           <div className="flex justify-center items-center gap-2 cursor-pointer  ">
             <SiRakuten
               className="bg-yellow-300 rounded-[50%] p-1 h-7 w-7 "

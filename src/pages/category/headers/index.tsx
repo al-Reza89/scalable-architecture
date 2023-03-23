@@ -5,7 +5,7 @@ const Navbars = () => {
   return (
     <div className="">
       <Headers />
-      <div className="max-w-6xl mx-auto pt-10 ">
+      <div className="max-w-7xl mx-auto pt-10 ">
         <AllNavbars />
       </div>
     </div>

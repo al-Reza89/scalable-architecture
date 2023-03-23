@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import { SiDiscord, SiRakuten } from "react-icons/si";
-import { BsGithub } from "react-icons/bs";
-import { RiSunLine } from "react-icons/ri";
-import { CiSearch } from "react-icons/ci";
-import SearchInput from "./SearchInput";
+import { useState } from 'react';
+import { BsGithub } from 'react-icons/bs';
+import { CiSearch } from 'react-icons/ci';
+import { RiSunLine } from 'react-icons/ri';
+import { SiDiscord, SiRakuten } from 'react-icons/si';
+import SearchInput from './SearchInput';
 
 const Headers = () => {
   const [showDiscord, setShowDiscord] = useState(false);
@@ -14,7 +14,7 @@ const Headers = () => {
   return (
     <div className="  ">
       <div className=" w-full h-14 bg-[rgb(29,29,31)]  z-10 sticky    ">
-        <div className=" flex justify-between h-full items-center  max-w-6xl mx-auto  ">
+        <div className=" flex justify-between h-full items-center  max-w-7xl mx-auto  ">
           <div className="flex justify-center items-center gap-2 cursor-pointer  ">
             <SiRakuten
               className="bg-yellow-300 rounded-[50%] p-1 h-7 w-7 "
@@ -48,8 +48,8 @@ const Headers = () => {
               <span
                 className={`${
                   showDiscord
-                    ? "absolute -left-4 py-1 px-2 bg-black mt-2 rounded-sm text-sm "
-                    : "hidden"
+                    ? 'absolute -left-4 py-1 px-2 bg-black mt-2 rounded-sm text-sm '
+                    : 'hidden'
                 }`}
               >
                 Discord
@@ -66,8 +66,8 @@ const Headers = () => {
               <span
                 className={`${
                   showGithub
-                    ? "absolute -left-4 py-1 px-2 bg-black mt-2 rounded-sm text-sm "
-                    : "hidden"
+                    ? 'absolute -left-4 py-1 px-2 bg-black mt-2 rounded-sm text-sm '
+                    : 'hidden'
                 }`}
               >
                 Github
@@ -84,8 +84,8 @@ const Headers = () => {
               <span
                 className={`${
                   showDark
-                    ? "absolute -left-2 py-1 px-2 bg-black mt-2 rounded-sm text-sm w-fit "
-                    : "hidden"
+                    ? 'absolute -left-2 py-1 px-2 bg-black mt-2 rounded-sm text-sm w-fit '
+                    : 'hidden'
                 }`}
               >
                 Light

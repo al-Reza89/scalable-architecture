@@ -1,12 +1,11 @@
-import React from "react";
-import { AiFillGithub } from "react-icons/ai";
-import { BsBoxArrowUpRight, BsMoonStars } from "react-icons/bs";
-import { RiFireLine } from "react-icons/ri";
-import { GiStabbedNote } from "react-icons/gi";
+import { AiFillGithub } from 'react-icons/ai';
+import { BsBoxArrowUpRight, BsMoonStars } from 'react-icons/bs';
+import { GiStabbedNote } from 'react-icons/gi';
+import { RiFireLine } from 'react-icons/ri';
 
 const BodySection = () => {
   return (
-    <div className="max-w-6xl mx-auto pb-10 ">
+    <div className="max-w-7xl mx-auto pb-10 ">
       <div className="flex w-[48%] flex-col pt-32 ">
         <span className="font-medium py-5 ">LIBRARY UI</span>
         <span className="text-yellow-300 text-5xl font-extrabold font-sans pb-3 ">
