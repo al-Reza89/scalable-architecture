@@ -10,7 +10,7 @@ const NavbarDemo: React.FC<INavbarDemo> = ({ categories }) => {
 
   return (
     <div className="w-[24%] h-60  ">
-      <Link href={`category/${categories.url}`}>
+      <Link href={`categories/${categories.url}`}>
         <div className="h-[75%] w-full bg-black rounded-t-md cursor-pointer  relative ">
           <Image
             src={`/images/${categories.url}.svg`}
