@@ -1,27 +1,26 @@
 import Link from 'next/link';
+import React from 'react';
 import { AiOutlineArrowLeft } from 'react-icons/ai';
-import { Code, RawCode, RawCss } from '../AllHeaders/Header1/Header1Text';
-import Headers1 from '../AllHeaders/Header1/Headers1';
-import Header2 from '../AllHeaders/Header2/Header2';
-import { Code2, RawCode2, RawCss2 } from '../AllHeaders/Header2/Header2Text';
 import ShowNavbar from './ShowNavbar';
 
-const componentsObjects = {
-  components1: {
-    component: <Headers1 />,
-    code: Code,
-    RawCode: RawCode,
-    RawCss: RawCss,
-  },
-  components2: {
-    component: <Header2 />,
-    code: Code2,
-    RawCode: RawCode2,
-    RawCss: RawCss2,
-  },
+type ComponentObject = {
+  component: React.ReactNode;
+  code: string;
+  RawCode: string;
+  RawCss: string;
 };
 
-const AllNavbars = () => {
+type ComponentsObjects = {
+  [key: string]: ComponentObject;
+};
+
+export interface IAllNavbars {
+  componentsObjects?: ComponentsObjects;
+}
+
+const AllNavbars: React.FC<IAllNavbars> = ({ componentsObjects = {} }) => {
+  console.log({ componentsObjects: componentsObjects });
+
   return (
     <div>
       <div className="">
