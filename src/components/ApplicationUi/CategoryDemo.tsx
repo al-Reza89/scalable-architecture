@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-export interface INavbarDemo {
+export interface ICategoryDemo {
   categories: any;
 }
 
-const NavbarDemo: React.FC<INavbarDemo> = ({ categories }) => {
+const CategoryDemo: React.FC<ICategoryDemo> = ({ categories }) => {
   // console.log(categories.category);
 
   return (
@@ -28,4 +28,4 @@ const NavbarDemo: React.FC<INavbarDemo> = ({ categories }) => {
   );
 };
 
-export default NavbarDemo;
+export default CategoryDemo;

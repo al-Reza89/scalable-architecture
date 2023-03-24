@@ -30,7 +30,10 @@ const componentsObjects = {
 const Navbars = () => {
   return (
     <div className="">
-      <CategoryHome componentsObjects={componentsObjects} />
+      <CategoryHome
+        componentsObjects={componentsObjects}
+        CategoryName="Navbars"
+      />
     </div>
   );
 };

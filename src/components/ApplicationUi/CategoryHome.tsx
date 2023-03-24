@@ -1,6 +1,6 @@
 import React from 'react';
 import Headers from '../Headers';
-import AllNavbars from './AllNavbars';
+import AllNavbars from './AllCategory';
 
 type ComponentObject = {
   component: React.ReactNode;
@@ -15,14 +15,21 @@ type ComponentsObjects = {
 
 export interface ICategoryHome {
   componentsObjects?: ComponentsObjects;
+  CategoryName?: string;
 }
 
-const CategoryHome: React.FC<ICategoryHome> = ({ componentsObjects = {} }) => {
+const CategoryHome: React.FC<ICategoryHome> = ({
+  componentsObjects = {},
+  CategoryName,
+}) => {
   return (
     <div>
       <Headers />
       <div className="max-w-7xl mx-auto pt-10 ">
-        <AllNavbars componentsObjects={componentsObjects} />
+        <AllNavbars
+          componentsObjects={componentsObjects}
+          CategoryName={CategoryName}
+        />
       </div>
     </div>
   );

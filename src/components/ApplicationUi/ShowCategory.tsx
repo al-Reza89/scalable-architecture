@@ -7,14 +7,14 @@ import ReflexCard from './ReflexCard';
 import ShowCode from './ShowCode';
 // import ReflexCard from './ReflexCard';
 
-export interface IShowNavbar {
+export interface IShowCategory {
   component: any;
   code: string;
   RawCode: string;
   RawCss: string;
 }
 
-const ShowNavbar: React.FC<IShowNavbar> = ({
+const ShowCategory: React.FC<IShowCategory> = ({
   component,
   code,
   RawCode,
@@ -109,4 +109,4 @@ const ShowNavbar: React.FC<IShowNavbar> = ({
   );
 };
 
-export default ShowNavbar;
+export default ShowCategory;

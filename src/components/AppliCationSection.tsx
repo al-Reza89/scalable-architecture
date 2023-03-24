@@ -1,5 +1,5 @@
 import { componentsCategory } from '@/data/ApplicationUiData';
-import NavbarDemo from './ApplicationUi/NavbarDemo';
+import NavbarDemo from './ApplicationUi/CategoryDemo';
 
 const AppliCationSection = () => {
   return (

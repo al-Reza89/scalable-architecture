@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { AiOutlineArrowLeft } from 'react-icons/ai';
-import ShowNavbar from './ShowNavbar';
+import ShowNavbar from './ShowCategory';
 
 type ComponentObject = {
   component: React.ReactNode;
@@ -14,11 +14,15 @@ type ComponentsObjects = {
   [key: string]: ComponentObject;
 };
 
-export interface IAllNavbars {
+export interface IAllCategory {
   componentsObjects?: ComponentsObjects;
+  CategoryName?: string;
 }
 
-const AllNavbars: React.FC<IAllNavbars> = ({ componentsObjects = {} }) => {
+const AllCategory: React.FC<IAllCategory> = ({
+  componentsObjects = {},
+  CategoryName,
+}) => {
   console.log({ componentsObjects: componentsObjects });
 
   return (
@@ -31,7 +35,7 @@ const AllNavbars: React.FC<IAllNavbars> = ({ componentsObjects = {} }) => {
           </Link>
         </div>
         <span className="text-4xl font-extrabold  font-sans text-gray-400 ">
-          Navbars
+          {CategoryName}
         </span>
         <div>
           {Object.entries(componentsObjects).map(
@@ -51,4 +55,4 @@ const AllNavbars: React.FC<IAllNavbars> = ({ componentsObjects = {} }) => {
   );
 };
 
-export default AllNavbars;
+export default AllCategory;
