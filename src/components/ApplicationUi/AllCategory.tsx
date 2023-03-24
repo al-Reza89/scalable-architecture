@@ -23,7 +23,7 @@ const AllCategory: React.FC<IAllCategory> = ({
   componentsObjects = {},
   CategoryName,
 }) => {
-  console.log({ componentsObjects: componentsObjects });
+  // console.log({ componentsObjects: componentsObjects });
 
   return (
     <div>

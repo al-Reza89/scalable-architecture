@@ -48,19 +48,20 @@ const ShowCode: React.FC<IShowCode> = ({ code, RawCode, RawCss }) => {
 
     setTimeout(() => {
       setIsCopied(false);
-    }, 1000);
+    }, 1200);
   };
 
   return (
     <div className="flex justify-between ">
       <pre
         style={{ whiteSpace: 'pre-wrap' }}
-        className="text-sm text-gray-300 "
+        className="text-sm text-gray-300 font-mono  "
       >
         {state.codeButton && code}
         {state.rawCssButton && RawCss}
         {state.rawCodeButton && RawCode}
       </pre>
+
       <div className="flex flex-col my-4 gap-3 text-xl  ">
         <div onClick={handleCopyClick} className="cursor-pointer">
           {isCopied ? (
