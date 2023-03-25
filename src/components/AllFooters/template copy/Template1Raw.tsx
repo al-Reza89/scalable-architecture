@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Template1Raw.module.css';
+import styles from './Template1.module.css';
 
 export interface ITemplate1Raw {}
 
