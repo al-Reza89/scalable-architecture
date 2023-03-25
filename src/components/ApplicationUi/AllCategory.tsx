@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { AiOutlineArrowLeft } from 'react-icons/ai';
-import ShowNavbar from './ShowCategory';
+import ShowCategory from './ShowCategory';
 
 type ComponentObject = {
   component: React.ReactNode;
@@ -27,7 +27,7 @@ const AllCategory: React.FC<IAllCategory> = ({
 
   return (
     <div>
-      <div className="">
+      <div className="mb-8">
         <div className="flex gap-1 text-blue-300 items-center cursor-pointer mb-5 ">
           <AiOutlineArrowLeft className="h-2 w-2" />
           <Link href={'/categories'}>
@@ -40,7 +40,7 @@ const AllCategory: React.FC<IAllCategory> = ({
         <div>
           {Object.entries(componentsObjects).map(
             ([key, { component, code, RawCode, RawCss }]) => (
-              <ShowNavbar
+              <ShowCategory
                 key={key}
                 component={component}
                 code={code}
