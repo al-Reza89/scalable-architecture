@@ -3,7 +3,7 @@ import NavbarDemo from './ApplicationUi/CategoryDemo';
 
 const AppliCationSection = () => {
   return (
-    <div className="bg-[rgb(31,31,32)]">
+    <div className="bg-[rgb(27,27,28)]">
       <div className="max-w-7xl mx-auto">
         <div className="py-10">
           <span className="pb- font-serif text-4xl">Application UI</span>
