@@ -1,29 +1,17 @@
+import Carosel1 from '@/components/AllCarosels/carosel1/Carosel1';
 import {
-  Code,
-  RawCode,
-  RawCss,
-} from '@/components/AllHeaders/Header1/Header1Text';
-import Headers1 from '@/components/AllHeaders/Header1/Headers1';
-import Header2 from '@/components/AllHeaders/Header2/Header2';
-import {
-  Code2,
-  RawCode2,
-  RawCss2,
-} from '@/components/AllHeaders/Header2/Header2Text';
+  Code1,
+  RawCode1,
+  RawCss1,
+} from '@/components/AllCarosels/carosel1/Carosel1Text';
 import CategoryHome from '@/components/ApplicationUi/CategoryHome';
 
 const componentsObjects = {
   components1: {
-    component: <Headers1 />,
-    code: Code,
-    RawCode: RawCode,
-    RawCss: RawCss,
-  },
-  components2: {
-    component: <Header2 />,
-    code: Code2,
-    RawCode: RawCode2,
-    RawCss: RawCss2,
+    component: <Carosel1 />,
+    code: Code1,
+    RawCode: RawCode1,
+    RawCss: RawCss1,
   },
 };
 

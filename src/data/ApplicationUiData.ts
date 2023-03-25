@@ -21,7 +21,7 @@ export const componentsCategory = [
   },
   {
     category: 'Inputs',
-    url: 'inputs',
+    url: 'allinputs',
   },
   {
     category: 'Color Scheme ',
@@ -61,6 +61,6 @@ export const componentsCategory = [
   },
   {
     category: 'Others',
-    url: 'Others',
+    url: 'others',
   },
 ];
