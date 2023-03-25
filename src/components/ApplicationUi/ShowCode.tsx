@@ -1,4 +1,5 @@
 import reducer from '@/hooks/ButtonHooks';
+import { Prism } from '@mantine/prism';
 import React, { useReducer, useState } from 'react';
 import { FaCss3Alt, FaReact } from 'react-icons/fa';
 import { HiOutlineCheck, HiOutlineClipboard } from 'react-icons/hi';
@@ -57,9 +58,21 @@ const ShowCode: React.FC<IShowCode> = ({ code, RawCode, RawCss }) => {
         style={{ whiteSpace: 'pre-wrap' }}
         className="text-sm text-gray-300 font-mono  "
       >
-        {state.codeButton && code}
-        {state.rawCssButton && RawCss}
-        {state.rawCodeButton && RawCode}
+        {state.codeButton && (
+          <Prism withLineNumbers language="tsx" noCopy>
+            {code}
+          </Prism>
+        )}
+        {state.rawCssButton && (
+          <Prism withLineNumbers language="css" noCopy>
+            {RawCss}
+          </Prism>
+        )}
+        {state.rawCodeButton && (
+          <Prism withLineNumbers language="tsx" noCopy>
+            {RawCode}
+          </Prism>
+        )}
       </pre>
 
       <div className="flex flex-col my-4 gap-3 text-xl  ">
