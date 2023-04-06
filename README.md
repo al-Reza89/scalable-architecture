@@ -39,4 +39,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 # git commit check
 
-# husky check 2
+# husky check 3
