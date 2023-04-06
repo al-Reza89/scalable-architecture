@@ -24,7 +24,7 @@ const AllCategory: React.FC<IAllCategory> = ({
   CategoryName,
 }) => {
   // console.log({ componentsObjects: componentsObjects });
-
+  //
   return (
     <div>
       <div className="mb-8">
