@@ -10,6 +10,13 @@ import {
   RawCode2,
   RawCss2,
 } from '@/components/AllInputs/input2/Input2Text';
+import Input3Raw from '@/components/AllInputs/input3/Input3Raw';
+import {
+  Code3,
+  RawCode3,
+  RawCss3,
+} from '@/components/AllInputs/input3/Input3Text';
+import Input4Raw from '@/components/AllInputs/input4/Input4Raw';
 import CategoryHome from '@/components/ApplicationUi/CategoryHome';
 
 const componentsObjects = {
@@ -24,6 +31,18 @@ const componentsObjects = {
     code: Code2,
     RawCode: RawCode2,
     RawCss: RawCss2,
+  },
+  components3: {
+    component: <Input3Raw />,
+    code: Code3,
+    RawCode: RawCode3,
+    RawCss: RawCss3,
+  },
+  components4: {
+    component: <Input4Raw />,
+    code: Code3,
+    RawCode: RawCode3,
+    RawCss: RawCss3,
   },
 };
 

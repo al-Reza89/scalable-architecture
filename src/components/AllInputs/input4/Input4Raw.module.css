@@ -1,0 +1,34 @@
+.labelStyles {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.inputStyles {
+  background-color: transparent;
+  display: block;
+  width: 30%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ce2c2c;
+}
+
+.inputStyles:focus,
+.inputStylesClicked {
+  outline: none;
+  border-color: #0077ff;
+}
+
+.valid {
+  background-color: transparent;
+}
+
+.inputStyles:focus {
+  border-width: none;
+}
+
+.errorStyles {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
