@@ -12,6 +12,9 @@ export interface IShowCategory {
   code: string;
   RawCode: string;
   RawCss: string;
+  MetaData?: string;
+  childComponent1?: string;
+  childComponent2?: string;
 }
 
 const ShowCategory: React.FC<IShowCategory> = ({
@@ -19,6 +22,9 @@ const ShowCategory: React.FC<IShowCategory> = ({
   code,
   RawCode,
   RawCss,
+  MetaData,
+  childComponent1,
+  childComponent2,
 }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
@@ -101,7 +107,14 @@ const ShowCategory: React.FC<IShowCategory> = ({
           {state.previewButton ? (
             <ReflexCard component={component} />
           ) : (
-            <ShowCode code={code} RawCode={RawCode} RawCss={RawCss} />
+            <ShowCode
+              code={code}
+              RawCode={RawCode}
+              RawCss={RawCss}
+              MetaData={MetaData}
+              childComponent1={childComponent1}
+              childComponent2={childComponent2}
+            />
           )}
         </div>
       </div>

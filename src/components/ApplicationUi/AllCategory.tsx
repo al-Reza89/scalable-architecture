@@ -8,6 +8,9 @@ type ComponentObject = {
   code: string;
   RawCode: string;
   RawCss: string;
+  MetaData?: string;
+  childComponent1?: string;
+  childComponent2?: string;
 };
 
 type ComponentsObjects = {
@@ -38,13 +41,27 @@ const AllCategory: React.FC<IAllCategory> = ({
         </span>
         <div>
           {Object.entries(componentsObjects).map(
-            ([key, { component, code, RawCode, RawCss }]) => (
+            ([
+              key,
+              {
+                component,
+                code,
+                RawCode,
+                RawCss,
+                MetaData,
+                childComponent1,
+                childComponent2,
+              },
+            ]) => (
               <ShowCategory
                 key={key}
                 component={component}
                 code={code}
                 RawCode={RawCode}
                 RawCss={RawCss}
+                MetaData={MetaData}
+                childComponent1={childComponent1}
+                childComponent2={childComponent2}
               />
             )
           )}
