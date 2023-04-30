@@ -18,6 +18,9 @@ const componentsObjects = {
     code: Code,
     RawCode: RawCode,
     RawCss: RawCss,
+    MetaData: 'its metadata',
+    childComponent1: 'its component 1',
+    childComponent2: 'its component 2',
   },
   components2: {
     component: <Header2 />,

@@ -1,12 +1,15 @@
 import React from 'react';
 import Headers from '../Headers';
-import AllNavbars from './AllCategory';
+import AllCategory from './AllCategory';
 
 type ComponentObject = {
   component: React.ReactNode;
   code: string;
   RawCode: string;
   RawCss: string;
+  MetaData?: string;
+  childComponent1?: string;
+  childComponent2?: string;
 };
 
 type ComponentsObjects = {
@@ -26,7 +29,7 @@ const CategoryHome: React.FC<ICategoryHome> = ({
     <div>
       <Headers />
       <div className="max-w-7xl mx-auto pt-10 ">
-        <AllNavbars
+        <AllCategory
           componentsObjects={componentsObjects}
           CategoryName={CategoryName}
         />
